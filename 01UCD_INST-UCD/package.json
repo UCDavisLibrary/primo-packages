@@ -1,0 +1,19 @@
+{
+  "name": "01UCD_V1",
+  "version": "1.0.0",
+  "description": "Primo customization package for the UC Davis Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "spelkey@ucdavis.edu",
+  "license": "ISC",
+  "devDependencies": {
+    "primo-explore-external-search": "git+https://github.com/UCDavisLibrary/primo-explore-external-search.git",
+    "primo-explore-hathitrust-availability": "^2.6.2"
+  },
+  "dependencies": {
+    "@ucd-lib/theme-elements": "0.0.2"
+  }
+}

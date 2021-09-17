@@ -1,16 +1,14 @@
+/** 
 import 'primo-explore-external-search';
 import { loadGoogleAnalytics } from "./ga";
 import setExternalSearchValues from './external-search';
 import setSearchBarAfter from './search-bar-after';
 import setSearchResultAvailabilityAfter from './search-result-availability-line-after';
-
+*/
 import "@ucd-lib/theme-elements/ucdlib/ucdlib-icons/academic";
-// web components
-//import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
-//import 'regenerator-runtime/runtime';
-//import './components/hello-world';
+import "@ucd-lib/theme-elements/brand/ucd-theme-pagination/ucd-theme-pagination";
 
-
+/** 
 loadGoogleAnalytics();
 
 // Increment version before release
@@ -38,3 +36,5 @@ setSearchResultAvailabilityAfter(app);
 //});
 //let customTemplates = await import('./customTemplates');
 //customTemplates();
+
+*/

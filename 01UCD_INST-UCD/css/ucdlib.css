@@ -40,6 +40,11 @@ prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-backgrou
     background: #022851 !important;
 }
 
+.homepage md-card.alert {
+    background-color: #fff199;
+    color: #191919;
+}
+
 .homepage md-card md-card-actions {
     margin-left: 0;
     margin-right: 0;

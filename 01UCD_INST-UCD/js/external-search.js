@@ -2,7 +2,7 @@ export default function setExternalSearchValues(app){
 
   app.value('searchTargets', [{
 	"name": "Worldcat",
-	"url": "https://110105.on.worldcat.org/v2/search?",
+	"url": "https://ucdavis.on.worldcat.org/search?",
 	"img": "custom/01UCD_INST-UCD/img/worldcat-logo.png",
 	"alt": "WorldCat logo",
 	mapping: function (queries, filters) {
@@ -21,7 +21,7 @@ export default function setExternalSearchValues(app){
 			let string = terms[2] || ''
 			let join = terms[3] || ''
 			return type + ':' + string + ' ' + join + ' '
-		}).join('')
+		}).join('');
 		}
 		catch (e) {
 		  return ''

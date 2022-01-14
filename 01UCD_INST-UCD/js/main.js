@@ -1,5 +1,6 @@
 
 import 'primo-explore-external-search';
+import 'primo-explore-hathitrust-availability';
 import { loadGoogleAnalytics } from "./ga";
 import setExternalSearchValues from './external-search';
 import setSearchBarAfter from './search-bar-after';
@@ -10,7 +11,7 @@ loadGoogleAnalytics();
 
 // Increment version before release
 // Doesn't actually bust the cache, but can be helpful info
-var ucdlibVersion = "2.1.1";
+var ucdlibVersion = "2.2.1";
 window.ucdlibVersion = ucdlibVersion;
 console.log(`Using build version: ${ucdlibVersion}`);
 
@@ -18,6 +19,7 @@ console.log(`Using build version: ${ucdlibVersion}`);
 const REQUIRED_MODULES = [
   'angularLoad', 
   'externalSearch',
+  'hathiTrustAvailability',
   'googleAnalytics'
 ];
 var app = angular.module('viewCustom', REQUIRED_MODULES);

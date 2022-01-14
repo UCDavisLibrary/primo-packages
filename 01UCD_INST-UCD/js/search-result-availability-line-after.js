@@ -24,4 +24,11 @@ export default function setSearchResultAvailabilityAfter(app){
   app.controller('prmSearchResultAvailabilityLineAfterController', function ($scope, $element) {
     window.browzine.primo.searchResult($scope);
   });
+
+  // Add Hathi-trust availablility component
+
+  app.component('prmSearchResultAvailabilityLineAfter', {
+    template: '<hathi-trust-availability hide-online="true" hide-if-journal="false" ignore-copyright="true"></hathi-trust-availability>'
+  });
+
 }

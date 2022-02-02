@@ -20,15 +20,14 @@ export default function setSearchResultAvailabilityAfter(app){
   browzine.script = document.createElement("script");
   browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js";
   document.head.appendChild(browzine.script);
-  
-  app.controller('prmSearchResultAvailabilityLineAfterController', function ($scope, $element) {
-    window.browzine.primo.searchResult($scope);
-  });
-
-  // Add Hathi-trust availablility component
 
   app.component('prmSearchResultAvailabilityLineAfter', {
-    template: '<hathi-trust-availability hide-online="true" hide-if-journal="false" ignore-copyright="true"></hathi-trust-availability>'
+    bindings: { parentCtrl: '<' },
+    controller: 'prmSearchResultAvailabilityLineAfterController'
   });
+
+  app.controller('prmSearchResultAvailabilityLineAfterController', ['$scope', function ($scope) {
+    window.browzine.primo.searchResult($scope);
+  }]);
 
 }

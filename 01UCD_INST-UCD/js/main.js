@@ -4,7 +4,9 @@ import { loadGoogleAnalytics } from "./ga";
 import setExternalSearchValues from './external-search';
 import setSearchBarAfter from './search-bar-after';
 import setSearchResultAvailabilityAfter from './search-result-availability-line-after';
-
+import setVpnPopUp from './vpn-popup';
+// import "@ucd-lib/theme-elements/brand/ucd-theme-list-accordion/ucd-theme-list-accordion";
+import 'lit';
 
 loadGoogleAnalytics();
 
@@ -26,6 +28,8 @@ var app = angular.module('viewCustom', REQUIRED_MODULES);
 setExternalSearchValues(app);
 setSearchBarAfter(app);
 setSearchResultAvailabilityAfter(app);
+setVpnPopUp(app);
+
 
 // Add any templates to cache
 //import('./customTemplates').then((customTemplates) => {
@@ -33,3 +37,4 @@ setSearchResultAvailabilityAfter(app);
 //});
 //let customTemplates = await import('./customTemplates');
 //customTemplates();
+

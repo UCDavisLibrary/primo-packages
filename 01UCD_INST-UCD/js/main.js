@@ -1,4 +1,3 @@
-
 import 'primo-explore-external-search';
 import { loadGoogleAnalytics } from "./ga";
 import setExternalSearchValues from './external-search';
@@ -37,4 +36,3 @@ setVpnPopUp(app);
 //});
 //let customTemplates = await import('./customTemplates');
 //customTemplates();
-

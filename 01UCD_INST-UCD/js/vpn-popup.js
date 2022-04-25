@@ -1,13 +1,12 @@
 /*VPN popup*/
 import { IpDetect } from "@ucd-lib/theme-elements/utils/ip-check";
 
-export default function vpnPopUp(app){
+export default function setVpnPopUp(app){
 
 
 
 app.controller('ipController', ['$scope', '$mdDialog', function($scope, $mdDialog) {
   let validIp = false;
-
   /* check if primoCookie exists, checks ip, set local storage key and display popup */
   if(localStorage.getItem("primoCookie") === null){
     (async () => {
@@ -17,7 +16,6 @@ app.controller('ipController', ['$scope', '$mdDialog', function($scope, $mdDialo
             validIp = true;
       /* for off-campus ip ranges */
       console.log(ip);
-
 
       if(!validIp){
           //set primoCookie in local storage

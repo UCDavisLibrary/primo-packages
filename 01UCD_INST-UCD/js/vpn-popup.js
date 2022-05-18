@@ -6,6 +6,9 @@ export default function setVpnPopUp(app){
 
 
 app.controller('ipController', ['$scope', '$mdDialog', function($scope, $mdDialog) {
+  this.$onInit = function () {
+
+  {
   let validIp = false;
   /* check if primoCookie exists, checks ip, set local storage key and display popup */
   if(localStorage.getItem("primoCookie") === null){
@@ -49,6 +52,7 @@ app.controller('ipController', ['$scope', '$mdDialog', function($scope, $mdDialo
       }
     })();
   }
+  }};
 
 
 

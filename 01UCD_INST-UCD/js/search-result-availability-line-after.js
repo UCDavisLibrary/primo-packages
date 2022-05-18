@@ -27,7 +27,10 @@ export default function setSearchResultAvailabilityAfter(app){
   });
 
   app.controller('prmSearchResultAvailabilityLineAfterController', ['$scope', function ($scope) {
+    this.$onInit = function () {
+    {
     window.browzine.primo.searchResult($scope);
+    }};
   }]);
 
 }
